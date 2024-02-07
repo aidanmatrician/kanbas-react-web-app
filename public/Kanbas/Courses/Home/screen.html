@@ -1,128 +1,212 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/Kanbas/styles.css" />
-        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
 
-      </head>
-    <body>
-        <a href="../../../index.html">Back Home</a>
-        <table width="100%">
-            <tbody>
-            <tr>
-                <td valign="top">
-                    <ul class="wd-kanbas-navigation">
-                        <li><a href="http://northeastern.edu">N</a></li>
-                        <li>
-                          <a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user wd-profile wd-icon"></i>Account</a></li>
-                        <li>
-                          <a href="/Kanbas/Dashboard/screen.html">
+<head>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css">
+</head>
+
+<body>
+    <a href="../../../index.html">Back Home</a>
+    <div class="d-flex">
+        <div class="d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <ul class="wd-kanbas-navigation">
+                    <li><a href="http://northeastern.edu">N</a></li>
+                    <li>
+                        <a href="/Kanbas/Account/Profile/screen.html"><i
+                                class="fa fa-user wd-profile wd-icon"></i>Account</a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html">
                             <i class="fa fa-tachometer wd-icon"></i> Dashboard</a>
+                    </li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i
+                                class="fa fa-book"></i>Courses</a></li>
+                    <li><a href="#"><i class="fa fa-calendar wd-icon"></i>Calendar</a></li>
+                    <li><a href="#"><i class="fa fa-inbox wd-icon"></i>Inbox</a></li>
+                    <li><a href="#"><i class="fa fa-clock-o wd-icon"></i>History</a></li>
+                    <li><a href="#"><i class="fa fa-television wd-icon"></i>Studio</a></li>
+                    <li><a href="#"><i class="fa fa-arrow-circle-o-right wd-icon  fa-inverse"></i>Commons</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle wd-icon"></i>Help</a></li>
+                </ul>
+
+        </div>
+        <div class="d-none d-md-block">
+            <ul class="wd-navigation">
+
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                </li>
+                <li><a href="http://piazza.com">Piazza</a></li>
+                <li><a href="#">Zoom</a></li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+            </ul>
+        </div>
+        <div class="flex-fill">
+            <div class="d-block d-md-none wd-top-navigation">
+                <span class="wd-nav">
+                    <a href="/Kanbas/Courses/Home/Hamburger/screen.html"><i class="fa fa-bars wd-top-nav-buttons"></i></a>
+                    <a href="/Kanbas/Courses/Home/Chevron/screen.html"><i class="fa fa-chevron-down wd-top-nav-buttons"></i></a>
+                </span>
+            </div>
+            <div>
+                <button type="button" class="btn btn-light">Collapse All</button>
+                <button type="button" class="btn btn-light">View Progress</button>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publish All
+                </button>
+                <button type="button" class="btn btn-light">Module</button>
+            </div>
+
+            <hr>
+            <!-- <ul>
+                <li>Week 0 - INTRO</li>
+                <ul>
+                    <li>LEARNING OBJECTIVES</li>
+                    <ul>
+                        <li>Introduction to the course</li>
+                        <li>Learn what is Web Development</li>
+                        <li>Creating a development environment</li>
+                        <li>Creating a Web Application</li>
+                        <li>Getting Started with the 1st Assignment</li>
+                    </ul>
+                    <li>READING</li>
+                    <ul>
+                        <li>Full Stack Developer - Chapter 1 - Introduction</li>
+                        <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
+                    </ul>
+                    <li>SLIDES</li>
+                    <ul>
+                        <li><a href="#">Introduction to Web Development Links to an external site.</a></li>
+                        <li><a href="#">Creating an HTTP server with Node.js Links to an external site.</a></li>
+                    </ul>
+                </ul>
+                <li>Weet 1 - HTML</li>
+                <ul>
+                    <li>LEARNING OBJECTIVES</li>
+                    <ul>
+                        <li>Learn how to create user interfaces with HTML</li>
+                        <li>Keep working on assignment 1</li>
+                        <li>Deploy the assignment to Netlify</li>
+                    </ul>
+                    <li>READING</li>
+                    <ul>
+                        <li>Full Stack Developer - Chapter 1 - Introduction</li>
+                        <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
+                    </ul>
+                </ul>
+            </ul> -->
+            <ul class="list-group wd-modules">
+                <li class="list-group-item">
+                    <div>
+                        <i class="fa fa-ellipsis-v"></i> Week 1
+                        <span class="float-end">
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-plus ms-2"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fa fa-ellipsis-v"></i> Learning Objectives
+                            <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
                         </li>
-                        <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a></li>
-                        <li><a href="#"><i class="fa fa-calendar wd-icon"></i>Calendar</a></li>
-                        <li><a href="#"><i class="fa fa-inbox wd-icon"></i>Inbox</a></li>
-                        <li><a href="#"><i class="fa fa-clock-o wd-icon"></i>History</a></li>
-                        <li><a href="#"><i class="fa fa-television wd-icon"></i>Studio</a></li>
-                        <li><a href="#"><i class="fa fa-arrow-circle-o-right wd-icon  fa-inverse"></i>Commons</a></li>
-                        <li><a href="#"><i class="fa fa-question-circle wd-icon"></i>Help</a></li>
-                      </ul>
-                </td>
-                <td valign="top">
-                    <ul class="wd-navigation">
-                        <li class="wd-active">
-                          <a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                        <li>
-                            <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                        <li class="list-group-item">
+                            <i class="fa fa-ellipsis-v"></i> Reading
+                            <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
                         </li>
-                        <li><a href="http://piazza.com">Piazza</a></li>
-                        <li><a href="#">Zoom</a></li>
-                        <li>
-                          <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                        <li class="list-group-item">
+                            <i class="fa fa-ellipsis-v"></i> Slides
+                            <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
                         </li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                      </ul>
-                </td>
-                <td valign="top">
-                    <table width="100%">
-                        <tbody>
-                        <tr>
-                            <td valign="top">
-                                <button>Collapse All</button>
-                                <button>View Progress</button>
-                                <select>
-                                    <option value="Publish-all">Publish All</option>
-                                </select>
-                                <button>Module</button>
-                                <ul>
-                                    <li>Week 0 - INTRO</li>
-                                    <ul>
-                                        <li>LEARNING OBJECTIVES</li>
-                                        <ul>
-                                            <li>Introduction to the course</li>
-                                            <li>Learn what is Web Development</li>
-                                            <li>Creating a development environment</li>
-                                            <li>Creating a Web Application</li>
-                                            <li>Getting Started with the 1st Assignment</li>
-                                        </ul>
-                                        <li>READING</li>
-                                        <ul>
-                                            <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                            <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                                        </ul>
-                                        <li>SLIDES</li>
-                                        <ul>
-                                            <li><a href="#">Introduction to Web Development Links to an external site.</a></li>
-                                            <li><a href="#">Creating an HTTP server with Node.js Links to an external site.</a></li>
-                                        </ul>
-                                    </ul>
-                                    <li>Weet 1 - HTML</li>
-                                    <ul>
-                                        <li>LEARNING OBJECTIVES</li>
-                                        <ul>
-                                            <li>Learn how to create user interfaces with HTML</li>
-                                            <li>Keep working on assignment 1</li>
-                                            <li>Deploy the assignment to Netlify</li>
-                                        </ul>
-                                        <li>READING</li>
-                                        <ul>
-                                            <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                            <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                                        </ul>
-                                    </ul>
-                                </ul>
-                            </td>
-                            <td valign="top"> 
-                                <h1>Course Status</h1>
-                                <button>Unpublish</button>
-                                <button>Published</button>
-                                <ul>
-                                    <li><a href="#">Import Existing Content</a></li>
-                                    <li><a href="#">Import From Commons</a></li>
-                                    <li><a href="#">Choose Home Page</a></li>
-                                    <li><a href="#">View Course Stream</a></li>
-                                    <li><a href="#">New Announcement</a></li>
-                                    <li><a href="#">New Analytics</a></li>
-                                    <li><a href="#">View Course Notifications</a></li>
-                                </ul>
-                                <h1>Coming Up</h1>
-                                <a href="#">View Calendar</a>
-                                <ul>
-                                    <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
-                                    <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-  
-    </body>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <i class="fa fa-ellipsis-v"></i> Week 2
+                        <span class="float-end">
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-plus ms-2"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fa fa-ellipsis-v"></i> Learning Objectives
+                            <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa fa-ellipsis-v"></i> Reading
+                            <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa fa-ellipsis-v"></i> Slides
+                            <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
+            <h3>Course Status</h3>
+            <button type="button" class="btn btn-light"><i class="fa fa-ban"></i> Unpublish</button>
+            <button type="button" class="btn btn-success"><i class="fa fa-check-circle"></i> Published</button>
+            <br>
+            <button type="button" class="btn btn-light"><i class="fa fa-download"></i> Import Existing
+                Content</button><br>
+            <button type="button" class="btn btn-light"><i class="fa fa-arrow-circle-o-right"></i> Import From
+                Commons</button><br>
+            <button type="button" class="btn btn-light"><i class="fa fa-home"></i> Choose Home Page</button><br>
+            <button type="button" class="btn btn-light"><i class="fa fa-bar-chart"></i> View Course Stream</button><br>
+            <button type="button" class="btn btn-light"><i class="fa fa-bullhorn"></i> New Announcement</button><br>
+            <button type="button" class="btn btn-light"><i class="fa fa-bar-chart"></i> New Analytics</button><br>
+            <button type="button" class="btn btn-light"><i class="fa fa-bell"></i> View Course
+                Notifications</button><br>
+            <br>
+            <h3>Coming up</h3>
+            <hr>
+            <ul>
+                <li class="wd-redlinks">
+                    <a class="wd-redlinks" href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
+                </li>
+                <li class="wd-redlinks">
+                    <a class="wd-redlinks" href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>
