@@ -10,7 +10,7 @@ function Courses() {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (
-    <div>
+    <div className="p-4">
       <h1><HiMiniBars3 /> Course: {course?.name}</h1>
       <CourseNavigation />
       <div>
@@ -21,10 +21,10 @@ function Courses() {
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />
             <Route path="Modules" element={<Modules/>} />
-            <Route path="Piazza" element={<h1>Piazza</h1>} />
+            <Route path="Piazza" element={<h1 className="pt-3">Piazza</h1>} />
             <Route path="Assignments" element={<Assignments/>} />
             <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>}/>
-            <Route path="Grades" element={<h1>Grades</h1>} />
+            <Route path="Grades" element={<h1 className="pt-3">Grades</h1>} />
           </Routes>
         </div>
       </div>

@@ -7,7 +7,7 @@ function Assignments() {
   const assignmentList = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
-    <>
+    <div className="pt-3">
     <input type="text" placeholder="Search for Assignments"/>
                         <button>Group</button>
                         <button>Assignment</button>
@@ -35,6 +35,6 @@ function Assignments() {
           </ul>
         </li>
       </ul>
-    </>
+    </div>
 );}
 export default Assignments;

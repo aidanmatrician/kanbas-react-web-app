@@ -3,7 +3,7 @@ import ModuleList from "../Modules/List";
 
 function Home() {
   return (
-    <div>
+    <div className="pt-3">
       <h2>Home</h2>
       <ModuleList />
       <h2>Status</h2>
